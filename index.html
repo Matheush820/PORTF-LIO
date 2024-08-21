@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Fundo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="intro" class="intro">
+        <h1>Bem-vindo ao Meu Site</h1>
+        <button onclick="goToInfo()">Clique para ver mais</button>
+    </div>
+    <nav class="menu">
+        <a href="#logo" class="logo">Matheus Henrique</a>
+        <img src="img/minhafoto.png" alt="Foto do Usuário">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+        <button onclick="toggleMenu()">Menu</button>
+    </nav>
+    
+    <div id="home" class="welcome">
+        <div class="welcome-content">
+            <h1><strong>EI, MEU NOME É MATHEUS HENRIQUE</strong></h1>
+            <p>Eu sou um Desenvolvedor web com experiência em criar e otimizar sites. <br> Apaixonado por tecnologia e inovação, sempre buscando novas soluções e melhorias.</p>
+            <button onclick="scrollToSobre()" class="btn">Sobre mim</button>
+        </div>
+    </div>
+    
+    <div id="sobre" class="sobre">
+        <h2>Sobre mim</h2>
+        <div class="barrinha"></div>
+        <div class="content-wrapper">
+            <div class="sobremim" onmouseover="interactSobre(this)" onmouseout="resetSobre(this)">
+                <h2>Saiba sobre mim</h2>
+                <p class="saibasobremim">Olá! Sou um programador Front-End e tenho uma verdadeira paixão por criar interfaces de usuário que sejam tanto interativas quanto funcionais.</p>
+                <p class="saibasobremim">Atualmente, estou no 2º semestre da faculdade de Análise e Desenvolvimento de Sistemas e estou empolgado para aplicar o que aprendi em um ambiente profissional.</p>
+            </div>
+            <div class="programacao-frase">
+                <p>"Programar é transformar ideias em soluções digitais."</p>
+            </div>
+        </div>
+        <div class="hab">
+            <h2>Minhas habilidades</h2>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+        </div>
+        <a href="https://wa.me/5581991106597" target="_blank" class="btn-link">Contate-me</a>
+    </div>
+    
+    <div id="projetos" class="projetos">
+        <h2>Meus Projetos</h2>
+        <p>Aqui você encontrará meus projetos pessoais, cada projeto contendo seu próprio estudo de caso.</p>
+        <div class="barrinha2"></div>
+        <div class="projeto">
+            <img class="projeto-img" src="img/landing-page-img.png" alt="Imagem do Projeto Landing-Page">
+            <div class="projeto-info">
+                <h2>Landing-Page</h2>
+                <p>Esta landing page foi desenvolvida usando HTML e CSS para oferecer uma experiência visual atraente e funcional.</p>
+                <a href="https://github.com/Matheush820/landingpage1.2" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="projeto">
+            <img class="projeto-img" src="img/bem-vindo-img.png" alt="Imagem do Projeto Portfolio Pessoal">
+            <div class="projeto-info">
+                <h2>Portfolio Pessoal</h2>
+                <p>Este portfólio é uma vitrine dos projetos que desenvolvi, cada um refletindo minhas habilidades e criatividade na construção de sites e aplicações web.</p>
+                <a href="https://github.com/Matheush820/PORTF-LIO" target="_blank" class="github-link"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="contato" class="contato">
+        <h2>Contato</h2>
+        <p>Vamos conversar e desenvolver soluções para a sua empresa juntos</p>
+        <h3>Email</h3>
+        <p>mh8208734@gmail.com</p>
+        
+        <h2 class="social">Social</h2>
+        <div class="social2">
+            <a href="https://www.linkedin.com/in/matheus-henrique-370520286/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Matheush820" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/matheus.h1098/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="profile-photo">
+            <img src="img/minhafoto.png" alt="Foto do Usuário">
+        </div>
+    </div>
+    
+    <a href="https://wa.me/81991106597" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
